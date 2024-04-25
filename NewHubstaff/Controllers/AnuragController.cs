@@ -8,5 +8,12 @@ namespace NewHubstaff.Controllers
         {
             return View();
         }
+
+        public IActionResult Service()
+        {
+            return View();
+        }
+
+
     }
 }
