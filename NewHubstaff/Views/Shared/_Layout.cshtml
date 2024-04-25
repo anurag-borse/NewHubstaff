@@ -4,27 +4,38 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - NewHubstaff</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/NewHubstaff.styles.css" asp-append-version="true" />
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins" rel="stylesheet">
-
-    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" />
-
-
     <link rel="stylesheet" type="text/css" href="~/assets/css/magnific-popup.css">
 
 
-    <link href="~/assets/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/assets/css/default.css" rel="stylesheet" />
     <link href="~/assets/css/fontawesome.css" rel="stylesheet" />
-    <link href="~/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="~/assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/assets/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="~/assets/css/menu-small.css" rel="stylesheet" />
+    <link href="~/assets/css/menu.css" rel="stylesheet" />
     <link href="~/assets/css/owl.carousel.min.css" rel="stylesheet" />
     <link href="~/assets/css/owl.theme.css" rel="stylesheet" />
-    <link href="~/assets/css/slick.css" rel="stylesheet" />
+    <link href="~/assets/css/owl.transitions.css" rel="stylesheet" />
+    <link href="~/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     <link href="~/assets/css/slick-theme.css" rel="stylesheet" />
+    <link href="~/assets/css/slick.css" rel="stylesheet" />
     <link href="~/assets/css/style.css" rel="stylesheet" />
-    <link href="~/assets/css/default.css" rel="stylesheet" />
-    <link href="~/assets/css/menu.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -121,11 +132,11 @@
                         <a href="javascript:void(0)">About</a><span class="menu-arrow"></span>
                         <ul class="submenu">
                             <li><a href="about.html">About</a></li>
-                            <li><a href="history.html">History</a></li>
+                            <li><a asp-action="History" asp-controller="Yadnesh">History</a></li>
                             <li class="has-submenu">
                                 <a href="javascript:void(0)">Services</a><span class="submenu-arrow"></span>
                                 <ul class="submenu">
-                                    <li><a href="service.html">Services</a></li>
+                                    <li><a asp-action="Services" asp-controller="Yadnesh">Services</a></li>
                                     <li><a href="service-image.html">Service With Image</a></li>
                                     <li><a href="service-detail.html">Single Service</a></li>
                                 </ul>
@@ -270,6 +281,9 @@
         </main>
     </div>
 
+
+  
+
     <!-- FOOTER START -->
     <footer class="footer">
         <div class="section-two">
@@ -369,31 +383,22 @@
         </section>
         <!-- End Copyright Bar -->
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
 
 
-    <script src="~/assets/js/jquery.min.js"></script>
-    <script src="~/assets/js/popper.min.js"></script>
 
+    <script src="~/assets/js/app.js"></script>
     <script src="~/assets/js/bootstrap.min.js"></script>
-    <script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/assets/js/counter.init.js"></script>
     <script src="~/assets/js/isotope.js"></script>
-    <script src="~/assets/js/portfolio-filter.js"></script>
-
+    <script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/magnific.init.js"></script>
     <script src="~/assets/js/owl.carousel.min.js"></script>
     <script src="~/assets/js/owlcarousel.init.js"></script>
+    <script src="~/assets/js/popper.min.js"></script>
+    <script src="~/assets/js/portfolio-filter.js"></script>
     <script src="~/assets/js/slick.init.js"></script>
     <script src="~/assets/js/slick.min.js"></script>
-
-    <script src="~/assets/js/magnific.init.js"></script>
-
-    <script src="~/assets/js/counter.init.js"></script>
-    <script src="~/assets/js/app.js"></script>
-
-
-
 
 
     @await RenderSectionAsync("Scripts", required: false)
