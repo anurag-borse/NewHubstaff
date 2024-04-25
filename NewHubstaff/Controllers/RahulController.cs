@@ -8,5 +8,6 @@ namespace NewHubstaff.Controllers
         {
             return View();
         }
+
     }
 }
